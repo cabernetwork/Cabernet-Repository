@@ -3,7 +3,7 @@
         "id": "cabernet",
         "name": "Cabernet",
         "version": {
-            "current_version": "0.1.0"
+            "current": "0.1.0"
         },
         "requires": [{
             "python": {
@@ -43,7 +43,7 @@
         "id": "provider_epg_tvguide",
         "name": "TVGuide",
         "version": {
-            "current_version": "0.1.6"
+            "current": "0.1.6"
         },
         "provider-name": "rocky4546",
         "summary": "Get EPG data from tvguide for personal use only",
@@ -63,7 +63,7 @@
         "id": "provider_video_daddylive",
         "name": "DaddyLive",
         "version": {
-            "current_version": "0.1.0"
+            "current": "0.1.0"
         },
         "provider-name": "rocky4546",
         "summary": "Watch TV channels from daddylivehd.sx website.",
@@ -83,7 +83,7 @@
         "id": "provider_video_m3u",
         "name": "M3U",
         "version": {
-            "current_version": "0.1.0"
+            "current": "0.1.0"
         },
         "provider-name": "rocky4546",
         "summary": "This is real internet television",
@@ -102,7 +102,7 @@
         "id": "provider_video_xumo",
         "name": "XUMO",
         "version": {
-            "current_version": "0.1.0"
+            "current": "0.1.0"
         },
         "provider-name": "rocky4546",
         "summary": "Xumo.TV brings you the best content from digital networks",
@@ -121,7 +121,7 @@
         "id": "provider_video_plutotv",
         "name": "PlutoTV",
         "version": {
-            "current_version": "0.1.0"
+            "current": "0.1.0"
         },
         "provider-name": "rocky4546",
         "summary": "This is real internet television",
