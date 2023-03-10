@@ -32,7 +32,7 @@
             "info": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/plugin.json",
             "checksum": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/plugin.json.sha2",
             "datadir": {
-                "url": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/repo",
+                "url": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/repo"
             }
         }
     }
