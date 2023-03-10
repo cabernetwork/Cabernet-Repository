@@ -3,7 +3,7 @@
         "id": "cabernet",
         "name": "Cabernet",
         "version": {
-            "current_version": null
+            "current_version": "0.1.0"
         },
         "requires": [{
             "python": {
@@ -19,6 +19,7 @@
                 "version": "5.3.1"
             }
         }],
+        "category": ["repository"],
         "provider-name": "rocky4546",
         "summary": "Cabernet allows control of IPTV streams",
         "description": "Connect streams to your favorite media server. Cabernet is a modular-based appliance/platform that cleans, organizes and repackages IPTV streams to be compatible and digested by media clients.",
