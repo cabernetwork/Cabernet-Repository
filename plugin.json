@@ -102,7 +102,7 @@
         "id": "provider_video_xumo",
         "name": "XUMO",
         "version": {
-            "current": "0.1.0"
+            "current": "0.1.1"
         },
         "provider-name": "rocky4546",
         "summary": "Xumo.TV brings you the best content from digital networks",
