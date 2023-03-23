@@ -103,15 +103,36 @@ class Generator:
                     if len(res) == 1:
                         file_path = res[0]
                         source = z.open(file_path)
-                        json_file += filler+source.read()
+                        plugin_defn = source.read()
+                        json_file += filler+plugin_defn
                         filler = b','
                     else:
                         print('WARNING: Zip file contains more than one plugin.json file {}'.format(file_to_extract))
+                    plugin_defn = json.loads(plugin_defn)
+                    if plugin_defn['plugin'].get('icon'):
+                        icon_path = plugin_defn['plugin']['icon']
+                        res = [i for i in file_list if icon_path in i]
+                        if len(res) == 1:
+                            file_path = res[0]
+                            source = z.open(file_path)
+                            icon = source.read()
+                            f = os.path.join(ZIPPATH, plugin_defn['plugin']['id'], icon_path)
+                            Generator.save_file( icon, _file=f)
+                    if plugin_defn['plugin'].get('fanart'):
+                        fanart_path = plugin_defn['plugin']['fanart']
+                        res = [i for i in file_list if fanart_path in i]
+                        if len(res) == 1:
+                            file_path = res[0]
+                            source = z.open(file_path)
+                            fanart = source.read()
+                            f = os.path.join(ZIPPATH, plugin_defn['plugin']['id'], fanart_path)
+                            Generator.save_file( fanart, _file=f)
+
             except (zipfile.BadZipFile, FileNotFoundError, KeyError) as ex:
                 print('Unable to unzip file to obtain plugin.json file {}\n{}'.format(file_to_extract, ex))
                 raise
         json_file = json_file.strip() + b']}'
-        Generator.save_file( json_file, file=os.path.join(ROOTPATH, 'plugin.json'))
+        Generator.save_file( json_file, _file=os.path.join(ROOTPATH, 'plugin.json'))
 
     @staticmethod
     def parse_date_str(time_str):
@@ -162,6 +183,9 @@ class Generator:
             print('Checking github for plugin {}'.format(plugin))
             self.check_plugin_repo(plugin)
 
+
+
+
     @staticmethod
     def get_file(_uri, filepath):
         req = urllib.request.Request(_uri)
@@ -186,17 +210,20 @@ class Generator:
     def generate_sha2_file():
         m = hashlib.sha512( open( os.path.join(ROOTPATH, 'plugin.json'), 'rb').read()).hexdigest()
         try:
-            Generator.save_file( m.encode('UTF-8'), file='plugin.json.sha2')
+            Generator.save_file( 
+                m.encode('UTF-8'), 
+                _file=os.path.join(ROOTPATH, 'plugin.json.sha2'))
         except Exception as ex:
             print('An error occurred creating plugin.json.sha2 file\n{}'.format(ex))
             raise
 
     @staticmethod
-    def save_file(data, file):
+    def save_file(_data, _file):
         try:
-            open(os.path.join(ROOTPATH,file), 'wb').write(data)
+            os.makedirs(os.path.dirname(_file), exist_ok=True)
+            open(os.path.join(_file), 'wb').write(_data)
         except Exception as e:
-            print("An error occurred saving %s file\n%s" % (file, e))
+            print("An error occurred saving %s file\n%s" % (_file, e))
             raise
 
 
