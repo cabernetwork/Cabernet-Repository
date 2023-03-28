@@ -17,6 +17,10 @@
             "python-lib": {
                 "name": "streamlink",
                 "version": "5.3.1"
+            },
+            "python-lib": {
+                "name": "requests",
+                "version": "2.26.0"
             }
         }],
         "category": ["repository"],
@@ -69,8 +73,14 @@
         "id": "provider_video_daddylive",
         "name": "DaddyLive",
         "version": {
-            "current": "0.1.0"
+            "current": "0.1.1"
         },
+        "requires": [{
+            "cabernet": {
+                "name": "cabernet",
+                "version": "0.9.11.01"
+            }
+        }],
         "provider-name": "rocky4546",
         "summary": "Watch TV channels from daddylivehd.sx website.",
         "description": "Watch Free TV! Stream daddylivehd.sx TV's channels of news, sports, and the Internet's best, completely free.",
@@ -89,8 +99,14 @@
         "id": "provider_video_m3u",
         "name": "M3U",
         "version": {
-            "current": "0.1.0"
+            "current": "0.1.1"
         },
+        "requires": [{
+            "cabernet": {
+                "name": "cabernet",
+                "version": "0.9.11.01"
+            }
+        }],
         "provider-name": "rocky4546",
         "summary": "This is real internet television",
         "description": "Watch Free TV! Using M3U and XMLTV formats.",
@@ -113,7 +129,7 @@
         "requires": [{
             "cabernet": {
                 "name": "cabernet",
-                "version": "0.9.11.0"
+                "version": "0.9.11.01"
             }
         }],
         "provider-name": "rocky4546",
@@ -134,8 +150,14 @@
         "id": "provider_video_plutotv",
         "name": "PlutoTV",
         "version": {
-            "current": "0.1.0"
+            "current": "0.1.1"
         },
+        "requires": [{
+            "cabernet": {
+                "name": "cabernet",
+                "version": "0.9.11.01"
+            }
+        }],
         "provider-name": "rocky4546",
         "summary": "This is real internet television",
         "description": "Watch Free TV! Stream Pluto TV's 100+ channels of news, sports, and the Internet's best, completely free.",
