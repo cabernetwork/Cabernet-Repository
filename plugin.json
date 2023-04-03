@@ -73,7 +73,7 @@
         "id": "provider_video_daddylive",
         "name": "DaddyLive",
         "version": {
-            "current": "0.1.1"
+            "current": "0.1.2"
         },
         "requires": [{
             "cabernet": {
@@ -99,7 +99,7 @@
         "id": "provider_video_m3u",
         "name": "M3U",
         "version": {
-            "current": "0.1.1"
+            "current": "0.1.2"
         },
         "requires": [{
             "cabernet": {
@@ -124,7 +124,7 @@
         "id": "provider_video_xumo",
         "name": "XUMO",
         "version": {
-            "current": "0.1.1"
+            "current": "0.1.2"
         },
         "requires": [{
             "cabernet": {
@@ -150,7 +150,7 @@
         "id": "provider_video_plutotv",
         "name": "PlutoTV",
         "version": {
-            "current": "0.1.1"
+            "current": "0.1.2"
         },
         "requires": [{
             "cabernet": {
