@@ -174,6 +174,7 @@ class Generator:
         """
         Uses GitHUB APi to obtain metadata for the plugin
         """
+        plugin = plugin
         githubapi = Generator.get_json_data(GIT_JSON_API.format(plugin))
         if not githubapi:
             print('GitHub says this is not a repository, ignoring {}'.format(plugin))
@@ -212,11 +213,9 @@ class Generator:
             if not filelist:
                 continue
             # found a folder with zip files in it, will process it
-            print('Checking github for plugin {}'.format(plugin))
-            self.check_plugin_repo(plugin)
-
-
-
+            if plugin != 'cabernet':
+                print('Checking github for plugin {}'.format(plugin))
+                self.check_plugin_repo(plugin)
 
     @staticmethod
     def get_file(_uri, filepath):
