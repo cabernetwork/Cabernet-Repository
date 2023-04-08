@@ -25,7 +25,8 @@
     "website": "https://www.tvguide.com/",
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
-    "dependencies": null
+    "dependencies": null,
+    "changelog": "- Added Default values to tool tip"
   }
 },{
   "plugin": {
@@ -84,7 +85,8 @@
     "website": "https://docs.fileformat.com/audio/m3u/",
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
-    "dependencies": null
+    "dependencies": null,
+    "changelog": "- Added Default values to tool tip"
   }
 },{
   "plugin": {
@@ -152,7 +154,8 @@
     "website": "https://www.xumo.tv/",
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
-    "dependencies": null
+    "dependencies": null,
+    "changelog": "- Added Default values to tool tip"
   }
 },{
   "plugin": {
@@ -181,6 +184,7 @@
     "website": "https://pluto.tv/",
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
-    "dependencies": null
+    "dependencies": null,
+    "changelog": "- Added Default values to tool tip"
   }
 }]}
