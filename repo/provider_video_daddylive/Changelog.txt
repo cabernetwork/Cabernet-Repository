@@ -1,0 +1,1 @@
+- If TVGuide plugin is not installed, will not allow Daddylive to select ALL for EPG plugins

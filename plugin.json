@@ -1,173 +1,186 @@
 {"plugins": [{
-    "plugin": {
-        "id": "cabernet",
-        "name": "Cabernet",
-        "version": {
-            "current": "0.1.0"
+  "plugin": {
+    "id": "cabernet",
+    "name": "Cabernet",
+    "version": {
+      "current": "0.1.0"
+    },
+    "requires": [
+      {
+        "python": {
+          "name": "python",
+          "version": "3.7.0"
         },
-        "requires": [{
-            "python": {
-                "name": "python",
-                "version": "3.7.0"
-            },
-            "python-lib": {
-                "name": "cryptography",
-                "version": "2.8"
-            },
-            "python-lib": {
-                "name": "streamlink",
-                "version": "5.3.1"
-            },
-            "python-lib": {
-                "name": "requests",
-                "version": "2.26.0"
-            }
-        }],
-        "category": ["repository"],
-        "provider-name": "rocky4546",
-        "summary": "Cabernet allows control of IPTV streams",
-        "description": "Connect streams to your favorite media server. Cabernet is a modular-based appliance/platform that cleans, organizes and repackages IPTV streams to be compatible and digested by media clients.",
-        "license": "MIT License, Copyright (C) 2021 ROCKY4546",
-        "source": "https://github.com/cabernetwork/cabernet",
-        "forum": "https://tvheadend.org/boards/5/topics/43052",
-        "website": "https://cabernetwork.github.io/",
-        "dir": {
-            "github_repo_stable": "https://api.github.com/repos/cabernetwork/cabernet",
-            "github_repo_unstable": "https://api.github.com/repos/cabernetwork/cabernet",
-            "info": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/plugin.json",
-            "checksum": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/plugin.json.sha2",
-            "datadir": {
-                "url": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/repo"
-            }
+        "python-lib": {
+          "name": "requests",
+          "version": "2.26.0"
         }
+      }
+    ],
+    "category": [
+      "repository"
+    ],
+    "provider-name": "rocky4546",
+    "summary": "Cabernet allows control of IPTV streams",
+    "description": "Connect streams to your favorite media server. Cabernet is a modular-based appliance/platform that cleans, organizes and repackages IPTV streams to be compatible and digested by media clients.",
+    "license": "MIT License, Copyright (C) 2021 ROCKY4546",
+    "source": "https://github.com/cabernetwork/cabernet",
+    "forum": "https://tvheadend.org/boards/5/topics/43052",
+    "website": "https://cabernetwork.github.io/",
+    "dir": {
+      "github_repo_stable": "https://api.github.com/repos/cabernetwork/cabernet",
+      "github_repo_unstable": "https://api.github.com/repos/cabernetwork/cabernet",
+      "info": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/plugin.json",
+      "checksum": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/plugin.json.sha2",
+      "datadir": {
+        "url": "https://raw.githubusercontent.com/cabernetwork/Cabernet-Repository/main/repo"
+      }
     }
-}
-,{
-    "plugin": {
-        "id": "provider_epg_tvguide",
-        "name": "TVGuide",
-        "version": {
-            "current": "0.1.9"
-        },
-        "requires": [{
-            "cabernet": {
-                "name": "cabernet",
-                "version": "0.9.11.0"
-            }
-        }],
-        "provider-name": "rocky4546",
-        "summary": "Get EPG data from tvguide for personal use only",
-        "description": "Obtain many days of EPG data from tvguide for personal use only.  There is no data within this plugin from the provider.",
-        "category": ["epg"],
-        "license": "Terms of Service: https://www.fandom.com/terms-of-service-pp1",
-        "source": "https://github.com/cabernetwork/provider_epg_tvguide",
-        "forum": "https://tvheadend.org/boards/5/topics/43052",
-        "website": "https://www.tvguide.com/",
-        "icon": "resources/icon.png",
-        "fanart": "resources/fanart.png",
-        "dependencies": null
-    }
-}
-,{
-    "plugin": {
-        "id": "provider_video_daddylive",
-        "name": "DaddyLive",
-        "version": {
-            "current": "0.1.4"
-        },
-        "requires": [{
-            "cabernet": {
-                "name": "cabernet",
-                "version": "0.9.11.01"
-            }
-        }],
-        "provider-name": "rocky4546",
-        "summary": "Watch TV channels from daddylivehd.sx website.",
-        "description": "Watch Free TV! Stream daddylivehd.sx TV's channels of news, sports, and the Internet's best, completely free.",
-        "category": ["video"],
-        "license": "MIT License, Copyright (C) 2023 ROCKY4546",
-        "source": "https://github.com/cabernetwork/provider_video_daddylive",
-        "forum": "https://tvheadend.org/boards/5/topics/43052",
-        "website": "https://daddylivehd.sx/",
-        "icon": "resources/icon.jpg",
-        "fanart": "resources/fanart.png",
-        "dependencies": "(optional) TVGuide provides the EPG for DaddyLive"
-    }
-}
-,{
-    "plugin": {
-        "id": "provider_video_m3u",
-        "name": "M3U",
-        "version": {
-            "current": "0.1.3"
-        },
-        "requires": [{
-            "cabernet": {
-                "name": "cabernet",
-                "version": "0.9.11.01"
-            }
-        }],
-        "provider-name": "rocky4546",
-        "summary": "This is real internet television",
-        "description": "Watch Free TV! Using M3U and XMLTV formats.",
-        "category": ["video"],
-        "license": "MIT License, Copyright (C) 2023 ROCKY4546",
-        "source": "https://github.com/cabernetwork/provider_video_m3u",
-        "forum": "https://tvheadend.org/boards/5/topics/43052",
-        "website": "https://docs.fileformat.com/audio/m3u/",
-        "icon": "resources/icon.png",
-        "fanart": "resources/fanart.jpg",
-        "dependencies": null
-    }
+  }
 },{
-    "plugin": {
-        "id": "provider_video_xumo",
-        "name": "XUMO",
-        "version": {
-            "current": "0.1.3"
-        },
-        "requires": [{
-            "cabernet": {
-                "name": "cabernet",
-                "version": "0.9.11.01"
-            }
-        }],
-        "provider-name": "rocky4546",
-        "summary": "Xumo.TV brings you the best content from digital networks",
-        "description": "Xumo.TV brings you the best content from digital networks, presented just like the channels on your TV and mobile devices, only with more cool features.",
-        "category": ["video"],
-        "license": "MIT License, Copyright (C) 2023 ROCKY4546",
-        "source": "https://github.com/cabernetwork/provider_video_xumo",
-        "forum": "https://tvheadend.org/boards/5/topics/43052",
-        "website": "https://www.xumo.tv/",
-        "icon": "resources/icon.png",
-        "fanart": "resources/fanart.png",
-        "dependencies": null
-    }
-}
-,{
-    "plugin": {
-        "id": "provider_video_plutotv",
-        "name": "PlutoTV",
-        "version": {
-            "current": "0.1.3"
-        },
-        "requires": [{
-            "cabernet": {
-                "name": "cabernet",
-                "version": "0.9.11.01"
-            }
-        }],
-        "provider-name": "rocky4546",
-        "summary": "This is real internet television",
-        "description": "Watch Free TV! Stream Pluto TV's 100+ channels of news, sports, and the Internet's best, completely free.",
-        "category": ["video"],
-        "license": "MIT License, Copyright (C) 2023 ROCKY4546",
-        "source": "https://github.com/cabernetwork/provider_video_plutotv",
-        "forum": "https://tvheadend.org/boards/5/topics/43052",
-        "website": "https://pluto.tv/",
-        "icon": "resources/icon.jpg",
-        "fanart": "resources/fanart.png",
-        "dependencies": null
-    }
+  "plugin": {
+    "id": "provider_epg_tvguide",
+    "name": "TVGuide",
+    "version": {
+      "current": "0.1.9"
+    },
+    "requires": [
+      {
+        "cabernet": {
+          "name": "cabernet",
+          "version": "0.9.11.0"
+        }
+      }
+    ],
+    "provider-name": "rocky4546",
+    "summary": "Get EPG data from tvguide for personal use only",
+    "description": "Obtain many days of EPG data from tvguide for personal use only.  There is no data within this plugin from the provider.",
+    "category": [
+      "epg"
+    ],
+    "license": "Terms of Service: https://www.fandom.com/terms-of-service-pp1",
+    "source": "https://github.com/cabernetwork/provider_epg_tvguide",
+    "forum": "https://tvheadend.org/boards/5/topics/43052",
+    "website": "https://www.tvguide.com/",
+    "icon": "resources/icon.png",
+    "fanart": "resources/fanart.png",
+    "dependencies": null
+  }
+},{
+  "plugin": {
+    "id": "provider_video_daddylive",
+    "name": "DaddyLive",
+    "version": {
+      "current": "0.1.4"
+    },
+    "requires": [
+      {
+        "cabernet": {
+          "name": "cabernet",
+          "version": "0.9.11.01"
+        }
+      }
+    ],
+    "provider-name": "rocky4546",
+    "summary": "Watch TV channels from daddylivehd.sx website.",
+    "description": "Watch Free TV! Stream daddylivehd.sx TV's channels of news, sports, and the Internet's best, completely free.",
+    "category": [
+      "video"
+    ],
+    "license": "MIT License, Copyright (C) 2023 ROCKY4546",
+    "source": "https://github.com/cabernetwork/provider_video_daddylive",
+    "forum": "https://tvheadend.org/boards/5/topics/43052",
+    "website": "https://daddylivehd.sx/",
+    "icon": "resources/icon.jpg",
+    "fanart": "resources/fanart.png",
+    "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
+    "changelog": "- Added the ability to turn on ATSC Keep Alive messages per plugin\r\n- Corrected bug for storing the correct name, thumbnail and size\r\n- Added ability to define group name for each tag in the channels.json file\r\n- Added list of other channels provided by DaddyLive Discord channel in Other Channels list"
+  }
+},{
+  "plugin": {
+    "id": "provider_video_m3u",
+    "name": "M3U",
+    "version": {
+      "current": "0.1.3"
+    },
+    "requires": [
+      {
+        "cabernet": {
+          "name": "cabernet",
+          "version": "0.9.11.01"
+        }
+      }
+    ],
+    "provider-name": "rocky4546",
+    "summary": "This is real internet television",
+    "description": "Watch Free TV! Using M3U and XMLTV formats.",
+    "category": [
+      "video"
+    ],
+    "license": "MIT License, Copyright (C) 2023 ROCKY4546",
+    "source": "https://github.com/cabernetwork/provider_video_m3u",
+    "forum": "https://tvheadend.org/boards/5/topics/43052",
+    "website": "https://docs.fileformat.com/audio/m3u/",
+    "icon": "resources/icon.png",
+    "fanart": "resources/fanart.jpg",
+    "dependencies": null
+  }
+},{
+  "plugin": {
+    "id": "provider_video_xumo",
+    "name": "XUMO",
+    "version": {
+      "current": "0.1.3"
+    },
+    "requires": [
+      {
+        "cabernet": {
+          "name": "cabernet",
+          "version": "0.9.11.01"
+        }
+      }
+    ],
+    "provider-name": "rocky4546",
+    "summary": "Xumo.TV brings you the best content from digital networks",
+    "description": "Xumo.TV brings you the best content from digital networks, presented just like the channels on your TV and mobile devices, only with more cool features.",
+    "category": [
+      "video"
+    ],
+    "license": "MIT License, Copyright (C) 2023 ROCKY4546",
+    "source": "https://github.com/cabernetwork/provider_video_xumo",
+    "forum": "https://tvheadend.org/boards/5/topics/43052",
+    "website": "https://www.xumo.tv/",
+    "icon": "resources/icon.png",
+    "fanart": "resources/fanart.png",
+    "dependencies": null
+  }
+},{
+  "plugin": {
+    "id": "provider_video_plutotv",
+    "name": "PlutoTV",
+    "version": {
+      "current": "0.1.3"
+    },
+    "requires": [
+      {
+        "cabernet": {
+          "name": "cabernet",
+          "version": "0.9.11.01"
+        }
+      }
+    ],
+    "provider-name": "rocky4546",
+    "summary": "This is real internet television",
+    "description": "Watch Free TV! Stream Pluto TV's 100+ channels of news, sports, and the Internet's best, completely free.",
+    "category": [
+      "video"
+    ],
+    "license": "MIT License, Copyright (C) 2023 ROCKY4546",
+    "source": "https://github.com/cabernetwork/provider_video_plutotv",
+    "forum": "https://tvheadend.org/boards/5/topics/43052",
+    "website": "https://pluto.tv/",
+    "icon": "resources/icon.jpg",
+    "fanart": "resources/fanart.png",
+    "dependencies": null
+  }
 }]}

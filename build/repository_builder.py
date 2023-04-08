@@ -45,6 +45,8 @@ TMPPATH    = os.path.join(BUILDPATH,'tmp','')
 ROOTPATH   = os.path.join(BUILDPATH,'..','')
 ZIPPATH    = os.path.join(BUILDPATH,'../repo','')
 GIT_JSON_API     = 'https://api.github.com/repos/cabernetwork/{}/releases'
+CHANGELOG  = 'Changelog.txt'
+
 
 class Generator:
     """
@@ -104,10 +106,12 @@ class Generator:
                         file_path = res[0]
                         source = z.open(file_path)
                         plugin_defn = source.read()
+                        plugin_defn = self.update_changelog(plugin_defn)
                         json_file += filler+plugin_defn
                         filler = b','
                     else:
                         print('WARNING: Zip file contains more than one plugin.json file {}'.format(file_to_extract))
+
                     plugin_defn = json.loads(plugin_defn)
                     if plugin_defn['plugin'].get('icon'):
                         icon_path = plugin_defn['plugin']['icon']
@@ -134,6 +138,31 @@ class Generator:
         json_file = json_file.strip() + b']}'
         Generator.save_file( json_file, _file=os.path.join(ROOTPATH, 'plugin.json'))
 
+
+    @staticmethod
+    def update_changelog(_plugin_defn):
+        """
+        inputs a json string and returns a json string with the changelog added
+        """
+        print('_plugin_defn', type(_plugin_defn))
+        plugin_dict = json.loads(_plugin_defn)
+        try:
+            print(_plugin_defn)
+            changelog_file = os.path.join(ZIPPATH, plugin_dict['plugin']['id'], CHANGELOG)
+            with open(changelog_file, mode='rb') as f:
+                changelog_text = f.read()
+                f.close()
+            plugin_dict['plugin']['changelog'] = changelog_text.decode()
+        except FileNotFoundError as ex:
+            print('Changelog should be added', str(ex))
+        except ValueError:
+            raise
+
+        _plugin_defn = json.dumps(plugin_dict, indent=2).encode('utf-8')
+        print('_plugin_defn2', type(_plugin_defn))
+
+        return _plugin_defn
+
     @staticmethod
     def parse_date_str(time_str):
         """
@@ -159,9 +188,14 @@ class Generator:
         latest = sorted_list[0]
         # check to see if file exists in the plugin folder
         zip_file = os.path.join(ZIPPATH, plugin, plugin + '-' + latest['tag_name'] + '.zip')
+        changelog_file = os.path.join(ZIPPATH, plugin, CHANGELOG)
+
         if os.path.isfile(zip_file):
             return
         Generator.get_file(latest['zipball_url'], zip_file)
+        with open(changelog_file, mode='w') as f:
+            f.write(latest['body'])
+            f.close()
 
     def update_repo(self):
         """
