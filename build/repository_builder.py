@@ -74,6 +74,7 @@ class Generator:
         filler = b''
 
         for plugin in plugins:
+            print(plugin)
             _path = os.path.join(plugin, 'plugin.json')
             plugin_path = os.path.join(ZIPPATH, plugin)
             if not os.path.isdir(plugin_path):
@@ -83,7 +84,7 @@ class Generator:
             filelist = [os.path.basename(x) for x in
                         glob.glob(os.path.join(plugin_path, plugin+'*.zip'))]
             if not filelist:
-                print('No zip files found in plugin folder, moving on {}'.format(plugin))
+                print('No zip files found in plugin folder, moving on. id: {}'.format(plugin))
                 continue
             m = re.findall(self.search_version, ' '.join(filelist))
             versions = OrderedDict()
@@ -138,29 +139,26 @@ class Generator:
         json_file = json_file.strip() + b']}'
         Generator.save_file( json_file, _file=os.path.join(ROOTPATH, 'plugin.json'))
 
-
     @staticmethod
     def update_changelog(_plugin_defn):
         """
         inputs a json string and returns a json string with the changelog added
         """
-        print('_plugin_defn', type(_plugin_defn))
         plugin_dict = json.loads(_plugin_defn)
         try:
-            print(_plugin_defn)
             changelog_file = os.path.join(ZIPPATH, plugin_dict['plugin']['id'], CHANGELOG)
             with open(changelog_file, mode='rb') as f:
                 changelog_text = f.read()
                 f.close()
-            plugin_dict['plugin']['changelog'] = changelog_text.decode()
+            if changelog_text:
+                plugin_dict['plugin']['changelog'] = changelog_text.decode()
         except FileNotFoundError as ex:
+            print(plugin_dict)
             print('Changelog should be added', str(ex))
-        except ValueError:
-            raise
+        except PermissionError:
+            print('Unable to add Changelog.txt', str(ex))
 
         _plugin_defn = json.dumps(plugin_dict, indent=2).encode('utf-8')
-        print('_plugin_defn2', type(_plugin_defn))
-
         return _plugin_defn
 
     @staticmethod
@@ -273,8 +271,8 @@ if __name__ == '__main__':
     args = get_args()
     g = Generator()
     if args.update_repo:
-        print('Request to update zip files in repo area')
+        print('###### Request to update zip files in repo area')
         g.update_repo()
     else:
-        print('Request to update plugin.json main file')
+        print('###### Request to update plugin.json main file')
         g.generate()
