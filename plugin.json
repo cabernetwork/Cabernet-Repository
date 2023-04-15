@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Added hdhr id per plugin so Plex can create tuners per plugin\r\n- Changed the start_ch_num default to -1 so Cabernet knows when to not implement the setting\r\n"
+    "changelog": "- Added hdhr id per plugin so Plex can create tuners per plugin\r\n- Changed the start_ch_num default to -1 so Cabernet knows when to not implement the setting\r\n- Removes spaces from beginning of channel name\r\n"
   }
 },{
   "plugin": {
