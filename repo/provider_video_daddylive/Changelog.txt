@@ -1,1 +1,3 @@
-- If TVGuide plugin is not installed, will not allow Daddylive to select ALL for EPG plugins
+- Added hdhr id per plugin so Plex can create tuners per plugin
+- Changed the start_ch_num default to -1 so Cabernet knows when to not implement the setting
+- Updated Other Channels.txt with recent changes
