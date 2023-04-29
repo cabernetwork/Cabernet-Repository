@@ -63,7 +63,7 @@
     "id": "provider_video_m3u",
     "name": "M3U",
     "version": {
-      "current": "0.1.4"
+      "current": "0.1.5"
     },
     "requires": [
       {
@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Added hdhr id per plugin so Plex can create tuners per plugin\r\n- Changed the start_ch_num default to -1 so Cabernet knows when to not implement the setting\r\n- Removes spaces from beginning of channel name\r\n"
+    "changelog": "- Fix bug when URL fails to download file\r\n"
   }
 },{
   "plugin": {
@@ -162,7 +162,7 @@
     "id": "provider_video_plutotv",
     "name": "PlutoTV",
     "version": {
-      "current": "0.1.5"
+      "current": "0.1.6"
     },
     "requires": [
       {
@@ -185,6 +185,6 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Added hdhr id per plugin so Plex can create tuners per plugin\r\n- Changed the start_ch_num default to -1 so Cabernet knows when to not implement the setting\r\n"
+    "changelog": "- Stop users from setting the EPG hours retrieved from being very high causing the opposite effect"
   }
 }]}

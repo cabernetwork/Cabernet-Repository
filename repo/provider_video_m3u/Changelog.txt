@@ -1,3 +1,1 @@
-- Added hdhr id per plugin so Plex can create tuners per plugin
-- Changed the start_ch_num default to -1 so Cabernet knows when to not implement the setting
-- Removes spaces from beginning of channel name
+- Fix bug when URL fails to download file
