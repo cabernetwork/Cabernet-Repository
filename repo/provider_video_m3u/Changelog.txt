@@ -1,1 +1,1 @@
-- Fix bug when URL fails to download file
+- Fixed VOD Exception for M3U channels

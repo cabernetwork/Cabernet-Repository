@@ -63,7 +63,7 @@
     "id": "provider_video_m3u",
     "name": "M3U",
     "version": {
-      "current": "0.1.5"
+      "current": "0.1.6"
     },
     "requires": [
       {
@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Fix bug when URL fails to download file\r\n"
+    "changelog": "- Fixed VOD Exception for M3U channels"
   }
 },{
   "plugin": {
