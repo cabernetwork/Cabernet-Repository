@@ -1,1 +1,2 @@
-- Stop users from setting the EPG hours retrieved from being very high causing the opposite effect
+- Fixed issue where HD state for each channel was reset after the channel update
+- Increase speed of channel update by not getting thumbnail size every time

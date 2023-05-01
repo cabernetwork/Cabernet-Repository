@@ -1,1 +1,2 @@
-- Fixed VOD Exception for M3U channels
+- Fixed issue where HD state for each channel was reset after the channel update
+- Increase speed of channel update by not getting thumbnail size every time
