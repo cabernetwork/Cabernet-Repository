@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.5"
+      "current": "0.1.6"
     },
     "requires": [
       {
@@ -56,7 +56,7 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Added hdhr id per plugin so Plex can create tuners per plugin\r\n- Changed the start_ch_num default to -1 so Cabernet knows when to not implement the setting\r\n- Updated Other Channels.txt with recent changes"
+    "changelog": "- BEWARE: This version changes the channel list sort to case insensitive, so channel numbers will change."
   }
 },{
   "plugin": {
