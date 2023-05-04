@@ -63,7 +63,7 @@
     "id": "provider_video_m3u",
     "name": "M3U",
     "version": {
-      "current": "0.1.7"
+      "current": "0.1.8"
     },
     "requires": [
       {
@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Fixed issue where HD state for each channel was reset after the channel update\r\n- Increase speed of channel update by not getting thumbnail size every time"
+    "changelog": "- Added support for #EXT-X-SESSION-DATA in the m3u file.  Allows session header data to be included in the HTTP requests.  It should be placed under the #EXTM3U tag and the format is\r\n`#EXT-X-SESSION-DATA:DATA-ID='HEADER', VALUE='{\"name1\": \"value1\", \"name2\": \"value2\"}'`\r\n`#EXT-X-SESSION-DATA:DATA-ID='HEADER', VALUE='{\"Referer\": \"https://abcdef.net\", \"Origin\": \"https://12345.net\"}'`\r\n"
   }
 },{
   "plugin": {
