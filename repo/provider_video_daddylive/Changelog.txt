@@ -1,1 +1,1 @@
-- BEWARE: This version changes the channel list sort to case insensitive, so channel numbers will change.
+- Fix exception when Daddylive provider is down
