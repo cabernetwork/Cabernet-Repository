@@ -1,3 +1,1 @@
-- Added support for #EXT-X-SESSION-DATA in the m3u file.  Allows session header data to be included in the HTTP requests.  It should be placed under the #EXTM3U tag and the format is
-`#EXT-X-SESSION-DATA:DATA-ID='HEADER', VALUE='{"name1": "value1", "name2": "value2"}'`
-`#EXT-X-SESSION-DATA:DATA-ID='HEADER', VALUE='{"Referer": "https://abcdef.net", "Origin": "https://12345.net"}'`
+- Added enable_full_duplicate_checking to instance setting. If the query_string part of the url has a token that changes every time a request for updates occurs, the result will be to re-download the packet over and over. To keep this from happening, set this to false and it will not include the query_string portion of the URL when determining whether the packet is new.

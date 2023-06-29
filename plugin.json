@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.7"
+      "current": "0.1.8"
     },
     "requires": [
       {
@@ -56,14 +56,14 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Fix exception when Daddylive provider is down"
+    "changelog": "- Added enable_full_duplicate_checking to instance setting.  If the query_string part of the url has a token that changes every time a request for updates occurs, the result will be to re-download the packet over and over.  To keep this from happening, set this to false and it will not include the query_string portion of the URL when determining whether the packet is new."
   }
 },{
   "plugin": {
     "id": "provider_video_m3u",
     "name": "M3U",
     "version": {
-      "current": "0.1.8"
+      "current": "0.1.9"
     },
     "requires": [
       {
@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Added support for #EXT-X-SESSION-DATA in the m3u file.  Allows session header data to be included in the HTTP requests.  It should be placed under the #EXTM3U tag and the format is\r\n`#EXT-X-SESSION-DATA:DATA-ID='HEADER', VALUE='{\"name1\": \"value1\", \"name2\": \"value2\"}'`\r\n`#EXT-X-SESSION-DATA:DATA-ID='HEADER', VALUE='{\"Referer\": \"https://abcdef.net\", \"Origin\": \"https://12345.net\"}'`\r\n"
+    "changelog": "- Added enable_full_duplicate_checking to instance setting. If the query_string part of the url has a token that changes every time a request for updates occurs, the result will be to re-download the packet over and over. To keep this from happening, set this to false and it will not include the query_string portion of the URL when determining whether the packet is new."
   }
 },{
   "plugin": {
@@ -132,7 +132,7 @@
     "id": "provider_video_xumo",
     "name": "XUMO",
     "version": {
-      "current": "0.1.5"
+      "current": "0.1.6"
     },
     "requires": [
       {
@@ -155,14 +155,14 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Fixed issue where HD state for each channel was reset after the channel update\r\n- Increase speed of channel update by not getting thumbnail size every time"
+    "changelog": "- Added enable_full_duplicate_checking to instance setting. If the query_string part of the url has a token that changes every time a request for updates occurs, the result will be to re-download the packet over and over. To keep this from happening, set this to false and it will not include the query_string portion of the URL when determining whether the packet is new."
   }
 },{
   "plugin": {
     "id": "provider_video_plutotv",
     "name": "PlutoTV",
     "version": {
-      "current": "0.1.7"
+      "current": "0.1.8"
     },
     "requires": [
       {
@@ -185,6 +185,6 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Fixed issue where HD state for each channel was reset after the channel update\r\n- Increase speed of channel update by not getting thumbnail size every time"
+    "changelog": "- Added enable_full_duplicate_checking to instance setting. If the query_string part of the url has a token that changes every time a request for updates occurs, the result will be to re-download the packet over and over. To keep this from happening, set this to false and it will not include the query_string portion of the URL when determining whether the packet is new."
   }
 }]}
