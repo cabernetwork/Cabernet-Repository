@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.8"
+      "current": "0.1.9"
     },
     "requires": [
       {
@@ -56,7 +56,7 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Added enable_full_duplicate_checking to instance setting.  If the query_string part of the url has a token that changes every time a request for updates occurs, the result will be to re-download the packet over and over.  To keep this from happening, set this to false and it will not include the query_string portion of the URL when determining whether the packet is new."
+    "changelog": "- Moved to new website\r\n- Added a ton of new channels\r\n- HIGHLY RECOMMEND THE FOLLOWING UPDATES\r\n- Change the number of EPG days to 2\r\n- Cleanout the daddylive entries from the database\r\n- Run the channel scheduler for daddylive\r\n- Edit the channels and disable all that you do not want\r\n- Run the EPG scheduler for daddylive\r\n- Go to the DVR/mediaserver and import the updates\r\n- If all checks out, then slowly increase the number of EPG days"
   }
 },{
   "plugin": {

@@ -1,1 +1,10 @@
-- Added enable_full_duplicate_checking to instance setting.  If the query_string part of the url has a token that changes every time a request for updates occurs, the result will be to re-download the packet over and over.  To keep this from happening, set this to false and it will not include the query_string portion of the URL when determining whether the packet is new.
+- Moved to new website
+- Added a ton of new channels
+- HIGHLY RECOMMEND THE FOLLOWING UPDATES
+- Change the number of EPG days to 2
+- Cleanout the daddylive entries from the database
+- Run the channel scheduler for daddylive
+- Edit the channels and disable all that you do not want
+- Run the EPG scheduler for daddylive
+- Go to the DVR/mediaserver and import the updates
+- If all checks out, then slowly increase the number of EPG days
