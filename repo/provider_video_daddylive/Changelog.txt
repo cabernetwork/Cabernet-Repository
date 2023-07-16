@@ -1,10 +1,2 @@
-- Moved to new website
-- Added a ton of new channels
-- HIGHLY RECOMMEND THE FOLLOWING UPDATES
-- Change the number of EPG days to 2
-- Cleanout the daddylive entries from the database
-- Run the channel scheduler for daddylive
-- Edit the channels and disable all that you do not want
-- Run the EPG scheduler for daddylive
-- Go to the DVR/mediaserver and import the updates
-- If all checks out, then slowly increase the number of EPG days
+- Added EPG to more channels
+- Fixed issue when using starting number.  It will now re-sort on edited channel name when channels are updated or when starting number is changed.
