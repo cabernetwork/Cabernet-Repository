@@ -1,2 +1,1 @@
-- Added EPG to more channels
-- Fixed issue when using starting number.  It will now re-sort on edited channel name when channels are updated or when starting number is changed.
+- website changed
