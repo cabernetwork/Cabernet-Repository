@@ -1,1 +1,3 @@
-- website changed
+- Updates reference url on every channel update
+- Does not update those channels that are disabled and not in the tvguide list making is much faster on channel refresh
+- Updated main site url for daddylive to new site
