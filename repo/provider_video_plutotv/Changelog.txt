@@ -1,1 +1,2 @@
-- Added enable_full_duplicate_checking to instance setting. If the query_string part of the url has a token that changes every time a request for updates occurs, the result will be to re-download the packet over and over. To keep this from happening, set this to false and it will not include the query_string portion of the URL when determining whether the packet is new.
+- Updated missing genre translations
+- Create a default instance when no instance is found

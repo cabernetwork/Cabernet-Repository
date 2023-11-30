@@ -1,1 +1,2 @@
-- Fixed exception during EPG task associated with missing keyword sources
+- Updated missing genre translations
+- Create a default instance when no instance is found

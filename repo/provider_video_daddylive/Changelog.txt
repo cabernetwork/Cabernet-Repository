@@ -1,3 +1,4 @@
-- Updates reference url on every channel update
-- Does not update those channels that are disabled and not in the tvguide list making is much faster on channel refresh
-- Updated main site url for daddylive to new site
+- Updated to support multiple instances correctly with each instance related to different channels
+- Added instance name to log entries
+- Create a default instance when no instance is found
+- Improve speed of EPG by filtering DB query to only enabled channels

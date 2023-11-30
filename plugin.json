@@ -3,7 +3,7 @@
     "id": "provider_epg_tvguide",
     "name": "TVGuide",
     "version": {
-      "current": "0.1.9"
+      "current": "0.1.10"
     },
     "requires": [
       {
@@ -26,14 +26,14 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Added Default values to tool tip"
+    "changelog": "- Updated missing genre translations"
   }
 },{
   "plugin": {
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.12"
+      "current": "0.1.13"
     },
     "requires": [
       {
@@ -56,7 +56,7 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Updates reference url on every channel update\r\n- Does not update those channels that are disabled and not in the tvguide list making is much faster on channel refresh\r\n- Updated main site url for daddylive to new site"
+    "changelog": "- Updated to support multiple instances correctly with each instance related to different channels\r\n- Added instance name to log entries\r\n- Create a default instance when no instance is found\r\n- Improve speed of EPG by filtering DB query to only enabled channels"
   }
 },{
   "plugin": {
@@ -132,7 +132,7 @@
     "id": "provider_video_xumo",
     "name": "XUMO",
     "version": {
-      "current": "0.1.7"
+      "current": "0.1.08"
     },
     "requires": [
       {
@@ -155,14 +155,14 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Fixed exception during EPG task associated with missing keyword sources"
+    "changelog": "- Updated missing genre translations\r\n- Create a default instance when no instance is found"
   }
 },{
   "plugin": {
     "id": "provider_video_plutotv",
     "name": "PlutoTV",
     "version": {
-      "current": "0.1.8"
+      "current": "0.1.09"
     },
     "requires": [
       {
@@ -185,6 +185,6 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Added enable_full_duplicate_checking to instance setting. If the query_string part of the url has a token that changes every time a request for updates occurs, the result will be to re-download the packet over and over. To keep this from happening, set this to false and it will not include the query_string portion of the URL when determining whether the packet is new."
+    "changelog": "- Updated missing genre translations\r\n- Create a default instance when no instance is found"
   }
 }]}
