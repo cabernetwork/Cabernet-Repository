@@ -1,2 +1,1 @@
-- Updated missing genre translations
-- Create a default instance when no instance is found
+- Changed HTTP retries to not hard coded

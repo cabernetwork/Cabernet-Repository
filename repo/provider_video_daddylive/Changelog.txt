@@ -1,4 +1,1 @@
-- Updated to support multiple instances correctly with each instance related to different channels
-- Added instance name to log entries
-- Create a default instance when no instance is found
-- Improve speed of EPG by filtering DB query to only enabled channels
+- Changed HTTP retries to not hard coded
