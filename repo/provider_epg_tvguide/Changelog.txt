@@ -1,1 +1,1 @@
-- Updated missing genre translations
+- Added Stream Timeout, HTTP Timeout and HTTP Retries to config

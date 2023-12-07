@@ -3,13 +3,13 @@
     "id": "provider_epg_tvguide",
     "name": "TVGuide",
     "version": {
-      "current": "0.1.10"
+      "current": "0.1.11"
     },
     "requires": [
       {
         "cabernet": {
           "name": "cabernet",
-          "version": "0.9.11.0"
+          "version": "0.9.14.0"
         }
       }
     ],
@@ -26,14 +26,14 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Updated missing genre translations"
+    "changelog": "- Added Stream Timeout, HTTP Timeout and HTTP Retries to config"
   }
 },{
   "plugin": {
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.14"
+      "current": "0.1.15"
     },
     "requires": [
       {
@@ -56,14 +56,14 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Changed HTTP retries to not hard coded"
+    "changelog": "- Added Stream Timeout, HTTP Timeout and HTTP Retries to config"
   }
 },{
   "plugin": {
     "id": "provider_video_m3u",
     "name": "M3U",
     "version": {
-      "current": "0.1.10"
+      "current": "0.1.11"
     },
     "requires": [
       {
@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Changed HTTP retries to not hard coded"
+    "changelog": "- Added Stream Timeout, HTTP Timeout and HTTP Retries to config"
   }
 },{
   "plugin": {
@@ -132,7 +132,7 @@
     "id": "provider_video_xumo",
     "name": "XUMO",
     "version": {
-      "current": "0.1.09"
+      "current": "0.1.10"
     },
     "requires": [
       {
@@ -155,14 +155,14 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Changed HTTP retries to not hard coded"
+    "changelog": "- Added Stream Timeout, HTTP Timeout and HTTP Retries to config"
   }
 },{
   "plugin": {
     "id": "provider_video_plutotv",
     "name": "PlutoTV",
     "version": {
-      "current": "0.1.10"
+      "current": "0.1.11"
     },
     "requires": [
       {
@@ -185,6 +185,6 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Changed HTTP retries to not hard coded"
+    "changelog": "- Added Stream Timeout, HTTP Timeout and HTTP Retries to config"
   }
 }]}

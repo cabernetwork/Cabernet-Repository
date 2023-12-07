@@ -1,1 +1,1 @@
-- Changed HTTP retries to not hard coded
+- Added Stream Timeout, HTTP Timeout and HTTP Retries to config
