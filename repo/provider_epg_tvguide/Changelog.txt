@@ -1,1 +1,1 @@
-- Added Stream Timeout, HTTP Timeout and HTTP Retries to config
+- Fixed issue when TVGuide channel has no programs

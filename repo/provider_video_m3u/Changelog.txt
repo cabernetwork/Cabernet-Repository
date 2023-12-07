@@ -1,1 +1,1 @@
-- Added Stream Timeout, HTTP Timeout and HTTP Retries to config
+- Moved number of parallel video packet downloads to config
