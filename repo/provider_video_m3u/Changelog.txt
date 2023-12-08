@@ -1,1 +1,1 @@
-- Moved number of parallel video packet downloads to config
+- Fixed retries error on download
