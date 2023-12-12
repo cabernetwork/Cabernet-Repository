@@ -1,1 +1,1 @@
-- Moved number of parallel video packet downloads to config
+- Increase downloads from 3 to 4
