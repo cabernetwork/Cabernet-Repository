@@ -1,1 +1,1 @@
-- Increase downloads from 3 to 4
+- Changed the default http timeout and retries
