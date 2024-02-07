@@ -1,1 +1,1 @@
-- Updated HTTP Header
+- Changed default HTTP stream settings in daddylive
