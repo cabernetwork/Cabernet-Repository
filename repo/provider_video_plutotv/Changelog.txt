@@ -1,1 +1,1 @@
-- Moved number of parallel video packet downloads to config
+- Added setting g_http_session

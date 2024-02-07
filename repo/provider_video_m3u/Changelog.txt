@@ -1,1 +1,1 @@
-- Fixed retries error on download
+- Added setting g_http_session

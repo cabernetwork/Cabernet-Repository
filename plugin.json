@@ -63,7 +63,7 @@
     "id": "provider_video_m3u",
     "name": "M3U",
     "version": {
-      "current": "0.1.13"
+      "current": "0.1.14"
     },
     "requires": [
       {
@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Fixed retries error on download"
+    "changelog": "- Added setting g_http_session"
   }
 },{
   "plugin": {
@@ -132,7 +132,7 @@
     "id": "provider_video_xumo",
     "name": "XUMO",
     "version": {
-      "current": "0.1.11"
+      "current": "0.1.12"
     },
     "requires": [
       {
@@ -155,14 +155,14 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Moved number of parallel video packet downloads to config"
+    "changelog": "- Added setting g_http_session"
   }
 },{
   "plugin": {
     "id": "provider_video_plutotv",
     "name": "PlutoTV",
     "version": {
-      "current": "0.1.12"
+      "current": "0.1.13"
     },
     "requires": [
       {
@@ -185,6 +185,6 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Moved number of parallel video packet downloads to config"
+    "changelog": "- Added setting g_http_session"
   }
 }]}
