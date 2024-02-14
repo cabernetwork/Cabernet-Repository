@@ -1,1 +1,1 @@
-- Fixed issue when TVGuide channel has no programs
+- URL has changed
