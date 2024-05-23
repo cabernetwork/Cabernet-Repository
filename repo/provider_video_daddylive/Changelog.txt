@@ -1,1 +1,1 @@
-- Changed default HTTP stream settings in daddylive
+- Fixed Referrer url
