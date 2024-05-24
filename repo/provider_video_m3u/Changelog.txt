@@ -1,1 +1,1 @@
-- Added setting g_http_session
+- Added channel-id to m3u8 parser

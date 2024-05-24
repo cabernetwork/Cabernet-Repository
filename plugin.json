@@ -63,7 +63,7 @@
     "id": "provider_video_m3u",
     "name": "M3U",
     "version": {
-      "current": "0.1.14"
+      "current": "0.1.15"
     },
     "requires": [
       {
@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Added setting g_http_session"
+    "changelog": "- Added channel-id to m3u8 parser"
   }
 },{
   "plugin": {
