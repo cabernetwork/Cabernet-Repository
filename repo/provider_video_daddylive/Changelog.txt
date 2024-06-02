@@ -1,1 +1,1 @@
-- Fix URL search string
+- Update m3u8 referer
