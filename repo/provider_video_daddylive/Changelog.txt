@@ -1,1 +1,1 @@
-- Updated M3U8 search with encoding algorithm
+- Updated m3u8 search
