@@ -1,1 +1,1 @@
-- Added channel-id to m3u8 parser
+- Made tvg-id highest priority for channel id

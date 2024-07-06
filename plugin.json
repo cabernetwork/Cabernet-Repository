@@ -63,7 +63,7 @@
     "id": "provider_video_m3u",
     "name": "M3U",
     "version": {
-      "current": "0.1.15"
+      "current": "0.1.16"
     },
     "requires": [
       {
@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Added channel-id to m3u8 parser"
+    "changelog": "- Made tvg-id highest priority for channel id"
   }
 },{
   "plugin": {
