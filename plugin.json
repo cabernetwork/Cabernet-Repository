@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.28"
+      "current": "0.1.29"
     },
     "requires": [
       {
@@ -56,7 +56,7 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Updated M3U8 search"
+    "changelog": "- Updated m3u8 search"
   }
 },{
   "plugin": {
