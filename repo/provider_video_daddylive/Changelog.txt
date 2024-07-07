@@ -1,1 +1,1 @@
-- Updated m3u8 search
+- M3U8 search updates
