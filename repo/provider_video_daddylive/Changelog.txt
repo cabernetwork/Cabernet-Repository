@@ -1,1 +1,2 @@
-- M3U8 search updates
+- Get additional channels from letter tabs
+- Update schedule tasks
