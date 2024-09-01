@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.34"
+      "current": "0.1.35"
     },
     "requires": [
       {
@@ -56,7 +56,7 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Get additional channels from letter tabs\r\n- Update schedule tasks"
+    "changelog": "- Added the ability to select players 1 or 2 in the instance config"
   }
 },{
   "plugin": {
