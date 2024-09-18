@@ -1,1 +1,1 @@
-- When scheduler runs a channel update, an exception occurred and is fixed.
+- Added available player numbers to metadata column in Channel Editor
