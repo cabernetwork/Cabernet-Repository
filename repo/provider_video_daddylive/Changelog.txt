@@ -1,1 +1,1 @@
-- Added available player numbers to metadata column in Channel Editor
+- Fixed group channel issue
