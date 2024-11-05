@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.39"
+      "current": "0.1.40"
     },
     "requires": [
       {
@@ -56,14 +56,14 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Fixed group channel issue"
+    "changelog": "- Changed player-enable_full_duplicate_checking to False and added player-enable_pathonly_checking to True.  This will fix the deja vu issue with daddylive."
   }
 },{
   "plugin": {
     "id": "provider_video_m3u",
     "name": "M3U",
     "version": {
-      "current": "0.1.16"
+      "current": "0.1.17"
     },
     "requires": [
       {
@@ -86,7 +86,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.jpg",
     "dependencies": null,
-    "changelog": "- Made tvg-id highest priority for channel id"
+    "changelog": "- Added player-enable_pathonly_checking to False. Only impacts DL."
   }
 },{
   "plugin": {
@@ -132,7 +132,7 @@
     "id": "provider_video_xumo",
     "name": "XUMO",
     "version": {
-      "current": "0.1.12"
+      "current": "0.1.13"
     },
     "requires": [
       {
@@ -155,14 +155,14 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Added setting g_http_session"
+    "changelog": "- Added player-enable_pathonly_checking to False. Only impacts DL."
   }
 },{
   "plugin": {
     "id": "provider_video_plutotv",
     "name": "PlutoTV",
     "version": {
-      "current": "0.1.13"
+      "current": "0.1.14"
     },
     "requires": [
       {
@@ -185,6 +185,6 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Added setting g_http_session"
+    "changelog": "- Added player-enable_pathonly_checking to False. Only impacts DL."
   }
 }]}

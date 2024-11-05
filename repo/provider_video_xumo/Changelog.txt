@@ -1,1 +1,1 @@
-- Added setting g_http_session
+- Added player-enable_pathonly_checking to False. Only impacts DL.

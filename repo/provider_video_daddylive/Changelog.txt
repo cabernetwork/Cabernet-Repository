@@ -1,1 +1,1 @@
-- Fixed group channel issue
+- Changed player-enable_full_duplicate_checking to False and added player-enable_pathonly_checking to True.  This will fix the deja vu issue with daddylive.

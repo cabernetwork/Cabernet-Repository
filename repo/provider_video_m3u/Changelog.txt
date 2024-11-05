@@ -1,1 +1,1 @@
-- Made tvg-id highest priority for channel id
+- Added player-enable_pathonly_checking to False. Only impacts DL.
