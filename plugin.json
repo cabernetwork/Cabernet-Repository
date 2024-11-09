@@ -3,7 +3,7 @@
     "id": "provider_epg_tvguide",
     "name": "TVGuide",
     "version": {
-      "current": "0.1.13"
+      "current": "0.1.14"
     },
     "requires": [
       {
@@ -26,7 +26,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- URL has changed"
+    "changelog": "- Updated EPG URL"
   }
 },{
   "plugin": {
