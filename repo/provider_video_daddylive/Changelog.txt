@@ -1,1 +1,1 @@
-- Changed player-enable_full_duplicate_checking to False and added player-enable_pathonly_checking to True.  This will fix the deja vu issue with daddylive.
+- Lowered the priority of EPG schedule task to run last since it will take a while to run.

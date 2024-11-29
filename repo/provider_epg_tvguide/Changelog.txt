@@ -1,1 +1,1 @@
-- Updated EPG URL
+- Slowed down EPG program data gets to reduce the site from thinking we are DDOS.
