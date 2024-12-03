@@ -162,7 +162,7 @@
     "id": "provider_video_plutotv",
     "name": "PlutoTV",
     "version": {
-      "current": "0.1.14"
+      "current": "0.1.15"
     },
     "requires": [
       {
@@ -185,6 +185,6 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Added player-enable_pathonly_checking to False. Only impacts DL."
+    "changelog": "- PTS Resync on filtered streams must be false.  Changed default to False."
   }
 }]}
