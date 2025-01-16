@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.41"
+      "current": "0.1.42"
     },
     "requires": [
       {
@@ -52,11 +52,11 @@
     "license": "MIT License, Copyright (C) 2023 ROCKY4546",
     "source": "https://github.com/cabernetwork/provider_video_daddylive",
     "forum": "https://tvheadend.org/boards/5/topics/43052",
-    "website": "https://dlhd.so/",
+    "website": "https://thedaddy.to/",
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Lowered the priority of EPG schedule task to run last since it will take a while to run."
+    "changelog": "- URL changed"
   }
 },{
   "plugin": {

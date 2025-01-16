@@ -1,1 +1,1 @@
-- Lowered the priority of EPG schedule task to run last since it will take a while to run.
+- URL changed
