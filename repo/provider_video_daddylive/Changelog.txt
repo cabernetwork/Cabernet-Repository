@@ -1,1 +1,3 @@
-- Fixed Import Channel Groups
+- Fixed Syntax errors caused by Python 3.12 and higher
+- Added Player 4 and 5 for manual testing
+- Added caching of URL info (needs more testing)
