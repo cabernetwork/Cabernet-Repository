@@ -1,3 +1,1 @@
-- Fixed Syntax errors caused by Python 3.12 and higher
-- Added Player 4 and 5 for manual testing
-- Added caching of URL info (needs more testing)
+- Added config entry for instance "Disable Bad Channels".  This helps to find channels that work for specific players.  Just because DL says it will play, does not mean it will.  Recommend turning it on at least for the initial scan.
