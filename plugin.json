@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.50"
+      "current": "0.1.51"
     },
     "requires": [
       {
@@ -56,7 +56,7 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Added config entry for instance \"Disable Bad Channels\".  This helps to find channels that work for specific players.  Just because DL says it will play, does not mean it will.  Recommend turning it on at least for the initial scan."
+    "changelog": "- Added ability to change DL hostname as needed in plugin config"
   }
 },{
   "plugin": {

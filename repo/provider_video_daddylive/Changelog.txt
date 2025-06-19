@@ -1,1 +1,1 @@
-- Added config entry for instance "Disable Bad Channels".  This helps to find channels that work for specific players.  Just because DL says it will play, does not mean it will.  Recommend turning it on at least for the initial scan.
+- Added ability to change DL hostname as needed in plugin config
