@@ -1,1 +1,1 @@
-- Added try block when auth keys are not available
+- Updates per website changes

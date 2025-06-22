@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.52"
+      "current": "0.1.53"
     },
     "requires": [
       {
@@ -56,7 +56,7 @@
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": "(optional) TVGuide provides the EPG for DaddyLive",
-    "changelog": "- Added try block when auth keys are not available"
+    "changelog": "- Updates per website changes"
   }
 },{
   "plugin": {
