@@ -132,7 +132,7 @@
     "id": "provider_video_xumo",
     "name": "XUMO",
     "version": {
-      "current": "0.1.13"
+      "current": "0.1.14"
     },
     "requires": [
       {
@@ -155,7 +155,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Added player-enable_pathonly_checking to False. Only impacts DL."
+    "changelog": "- Removed trailing tabs in channel names. Caused issues with the lineup.json request."
   }
 },{
   "plugin": {

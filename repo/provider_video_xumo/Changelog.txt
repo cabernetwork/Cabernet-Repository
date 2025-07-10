@@ -1,1 +1,1 @@
-- Added player-enable_pathonly_checking to False. Only impacts DL.
+- Removed trailing tabs in channel names. Caused issues with the lineup.json request.
