@@ -1,1 +1,1 @@
-- Changed provider URLs
+- Added delay during EPG channel listing GETS

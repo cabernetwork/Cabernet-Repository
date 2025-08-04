@@ -3,7 +3,7 @@
     "id": "provider_epg_tvguide",
     "name": "TVGuide",
     "version": {
-      "current": "0.1.16"
+      "current": "0.1.17"
     },
     "requires": [
       {
@@ -26,7 +26,7 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- Changed provider URLs"
+    "changelog": "- Added delay during EPG channel listing GETS"
   }
 },{
   "plugin": {
