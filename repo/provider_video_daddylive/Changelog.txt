@@ -1,1 +1,1 @@
-- Fixed auth string
+- Updated HTTP header with browser version
