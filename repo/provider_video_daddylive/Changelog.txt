@@ -1,1 +1,1 @@
-- Updated HTTP header with browser version
+- Impacts from changes to website
