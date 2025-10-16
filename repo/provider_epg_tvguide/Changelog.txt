@@ -1,1 +1,1 @@
-- More testing of updates
+- Added http delay setting

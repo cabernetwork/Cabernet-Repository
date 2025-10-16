@@ -3,7 +3,7 @@
     "id": "provider_epg_tvguide",
     "name": "TVGuide",
     "version": {
-      "current": "0.1.21"
+      "current": "0.1.22"
     },
     "requires": [
       {
@@ -26,14 +26,14 @@
     "icon": "resources/icon.png",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- More testing of updates"
+    "changelog": "- Added http delay setting"
   }
 },{
   "plugin": {
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.62"
+      "current": "0.1.63"
     },
     "requires": [
       {
