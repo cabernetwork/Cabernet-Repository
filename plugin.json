@@ -33,7 +33,7 @@
     "id": "provider_video_daddylive",
     "name": "DaddyLive",
     "version": {
-      "current": "0.1.66"
+      "current": "0.1.67"
     },
     "requires": [
       {
