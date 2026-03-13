@@ -132,13 +132,13 @@
     "id": "provider_video_plutotv",
     "name": "PlutoTV",
     "version": {
-      "current": "0.1.15"
+      "current": "0.1.17"
     },
     "requires": [
       {
         "cabernet": {
           "name": "cabernet",
-          "version": "0.9.14.00"
+          "version": "0.9.16.00"
         }
       }
     ],
@@ -148,13 +148,13 @@
     "category": [
       "video"
     ],
-    "license": "MIT License, Copyright (C) 2023 ROCKY4546",
+    "license": "MIT License, Copyright (C) 2026 ROCKY4546",
     "source": "https://github.com/cabernetwork/provider_video_plutotv",
-    "forum": "https://tvheadend.org/boards/5/topics/43052",
+    "forum": "https://tvheadend.org/d/7455-daddylive-plutotv-xumo-m3u-xmltv-samsungtv-plex-tvguide-interfaces-appliance",
     "website": "https://pluto.tv/",
     "icon": "resources/icon.jpg",
     "fanart": "resources/fanart.png",
     "dependencies": null,
-    "changelog": "- PTS Resync on filtered streams must be false.  Changed default to False."
+    "changelog": "- Only supports HLS streams. MPD not currently supported\r\n- Adjusted icons used\r\n- Reduced the number of active streams to 5\r\n- Removed get EPG on startup task, so users can configure the plugin after channels are obtains, but before the EPG\r\n- Updated translations of groups\r\n- Plugin is now dependent on Cabernet version 0.9.16\r\n- Update channel and epg tasks are totally revamped"
   }
 }]}

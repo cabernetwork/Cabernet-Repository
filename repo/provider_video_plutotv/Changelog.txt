@@ -1,1 +1,7 @@
-- PTS Resync on filtered streams must be false.  Changed default to False.
+- Only supports HLS streams. MPD not currently supported
+- Adjusted icons used
+- Reduced the number of active streams to 5
+- Removed get EPG on startup task, so users can configure the plugin after channels are obtains, but before the EPG
+- Updated translations of groups
+- Plugin is now dependent on Cabernet version 0.9.16
+- Update channel and epg tasks are totally revamped
